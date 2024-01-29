@@ -6,7 +6,7 @@
 /*   By: obouchta <obouchta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 16:23:03 by obouchta          #+#    #+#             */
-/*   Updated: 2024/01/24 18:23:20 by obouchta         ###   ########.fr       */
+/*   Updated: 2024/01/29 10:37:53 by obouchta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -174,7 +174,6 @@ void	push_to_b(t_stack **a, t_stack **b)
 	pb(&(*a)->head, &(*b)->head);
 	index_stack(*a);
 	index_stack(*b);
-	// int moy = stack_s_max((*a)->head) + stack_s_min((*a)->head) / 2;
 	while ((*a)->size > 3)
 	{
 		find_place_in_b(a, b);
